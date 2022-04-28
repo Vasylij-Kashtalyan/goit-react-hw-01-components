@@ -13,7 +13,11 @@ JS-код чистый и понятный, используется Prettier.
 Достаточно базовой стилизации приложения, в первую очередь оно должно работать, а уже потом быть красивое. Выделяй 20% времени на CSS и 80% на JS.
   
 Задания
+  
 <a href="https://github.com/goitacademy/react-homework/blob/master/homework-01/social-profile" >Задание 1 - Профиль социальной сети </a>
-Задание 2 - Секция статистики https://github.com/goitacademy/react-homework/blob/master/homework-01/statistics
-Задание 3 - Список друзей https://github.com/goitacademy/react-homework/blob/master/homework-01/friend-list
-Задание 4 - История транзакций  https://github.com/goitacademy/react-homework/blob/master/homework-01/transaction-history
+<a href="https://github.com/goitacademy/react-homework/blob/master/homework-01/statistics" >Задание 2 - Секция статистики  </a>
+<a href="https://github.com/goitacademy/react-homework/blob/master/homework-01/friend-list" >Задание 3 - Список друзей </a>
+<a href="https://github.com/goitacademy/react-homework/blob/master/homework-01/transaction-history" >Задание 4 - История транзакций </a>
+
+ 
+  
