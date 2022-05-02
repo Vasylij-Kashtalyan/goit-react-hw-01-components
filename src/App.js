@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import ProfileList from './components/ProfSocialNet/ProfileList';
+import user from './user.json';
+import Container from './components/container/Container';
+import Statistics from './components/SectionStatistics/Statistics';
+import data from './data.json';
+import FriendList from './components/FriendList/FriendList';
+import friends from './friends.json';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import tranzactions from './tranzactions.json';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <ProfileList items={user} />
+      <Statistics stats={data} title="Upload stats" />
+      <FriendList friends={friends} />
+      <TransactionHistory items={tranzactions} />
+    </Container>
   );
 }
-
-export default App;

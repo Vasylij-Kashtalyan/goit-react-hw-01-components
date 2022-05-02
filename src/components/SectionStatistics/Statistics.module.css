@@ -1,0 +1,14 @@
+.title {
+  display: flex;
+  justify-content: center;
+}
+.statlist {
+  composes: title;
+  align-items: center;
+}
+
+.item {
+  composes: title;
+  flex-direction: column;
+  margin: 5px;
+}
