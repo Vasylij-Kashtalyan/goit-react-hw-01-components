@@ -1,20 +1,30 @@
 import './App.css';
-import ProfileList from './components/ProfSocialNet/ProfileList';
-import user from './user.json';
-import Container from './components/container/Container';
+import Container from './components/Container/Container';
+
+import Profile from './components/ProfSocialNet/Profile';
+import user from './data/user.json';
+
 import Statistics from './components/SectionStatistics/Statistics';
-import data from './data.json';
-import FriendList from './components/FriendList/FriendList';
-import friends from './friends.json';
+import data from './data/data.json';
+
+import Friends from './components/FriendList/Friends';
+import friends from './data/friends.json';
+
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
-import tranzactions from './tranzactions.json';
+import tranzactions from './data/tranzactions.json';
 
 export default function App() {
   return (
     <Container>
-      <ProfileList items={user} />
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
       <Statistics stats={data} title="Upload stats" />
-      <FriendList friends={friends} />
+      <Friends friends={friends} />
       <TransactionHistory items={tranzactions} />
     </Container>
   );

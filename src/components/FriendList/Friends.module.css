@@ -17,8 +17,7 @@
 }
 .item {
   align-items: center;
-  border-top: 2.5px solid #0c1ba5;
-  border-bottom: 2.5px solid #f1e14b;
+
   border-radius: 5px;
   color: #111110;
   display: flex;

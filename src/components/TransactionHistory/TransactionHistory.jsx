@@ -1,9 +1,13 @@
 import PropTypes from 'prop-types';
 import s from './TransactionHistory.module.css';
+import getRandomHexColor from '../RandomColor/getRandomColor';
 
 function TransactionHistory({ items }) {
   return (
-    <table className={s.transactionHistory}>
+    <table
+      className={s.transactionHistory}
+      style={{ backgroundColor: getRandomHexColor() }}
+    >
       <thead>
         <tr>
           <th>Type</th>
@@ -30,6 +34,7 @@ function TransactionHistory({ items }) {
 TransactionHistory.ropTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
+      id: PropTypes.string.isRequired,
       type: PropTypes.string.isRequired,
       amount: PropTypes.number.isRequired,
       currency: PropTypes.string.isRequired,
