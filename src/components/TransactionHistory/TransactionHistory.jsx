@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import s from './TransactionHistory.module.css';
-import getRandomHexColor from '../RandomColor/getRandomColor';
+import getRandomHexColor from '../../utils/getRandomColor';
 
 function TransactionHistory({ items }) {
   return (

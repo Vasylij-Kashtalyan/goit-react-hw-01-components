@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import s from './Friends.module.css';
-import getRandomHexColor from '../RandomColor/getRandomColor';
+import getRandomHexColor from '../../utils/getRandomColor';
 
 export default function FriendList({ friends }) {
   return (

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import dafaulImge from './default.jpg';
 import s from './Profile.module.css';
-import getRandomHexColor from '../RandomColor/getRandomColor';
+import getRandomHexColor from '../../utils/getRandomColor';
 
 function Profile({ username, tag, location, avatar = dafaulImge, stats }) {
   const { followers, views, likes } = stats;
